@@ -1,0 +1,345 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Italiano (Italia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+#ifdef _WIN32
+LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)\r\n"
+    "LANGUAGE 16, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\Plot3.rc2""  // risorse non modificate con Microsoft Visual C++\r\n"
+    "#include ""afxres.rc""     // Componenti standard\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041004e4"
+        BEGIN
+            VALUE "Comments", "Plot DLL V.3"
+            VALUE "CompanyName", "Gabriele Salvato"
+            VALUE "FileDescription", "DLL per Visualizzazione Grafica 2D"
+            VALUE "FileVersion", "3.0.0.1"
+            VALUE "InternalName", "Plot3.dll"
+            VALUE "LegalCopyright", "(c) GabrieleSalvato"
+            VALUE "LegalTrademarks", "I.P.C.F. del C.N.R. - Messina"
+            VALUE "OriginalFilename", "Plot3.dll"
+            VALUE "ProductName", "Plot3"
+            VALUE "ProductVersion", "3.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x410, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_AXISDLG DIALOGEX 0, 0, 149, 70
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Axis Limits"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,110,27,31,16
+    PUSHBUTTON      "Cancel",IDCANCEL,110,46,31,16
+    CTEXT           "Xmin",IDC_MINXY,10,27,24,16,SS_CENTERIMAGE
+    CTEXT           "Xmax",IDC_MAXXY,10,46,24,16,SS_CENTERIMAGE
+    EDITTEXT        IDC_MIN,35,27,71,16,ES_RIGHT | ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_MAX,35,46,71,16,ES_RIGHT | ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_CLIENTEDGE
+    CONTROL         "AutoRange",IDC_AUTO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,11,57,10
+    CONTROL         "LogScale",IDC_LOG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,82,11,57,10
+END
+
+IDD_AXESDLG DIALOGEX 0, 0, 151, 105
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Plot Limits"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,31,84,27,14
+    PUSHBUTTON      "Cancel",IDCANCEL,86,84,27,14,BS_CENTER | BS_VCENTER
+    CTEXT           "XMin",IDC_STATIC,9,11,18,8,SS_CENTERIMAGE
+    CTEXT           "XMax",IDC_STATIC,9,27,18,8,SS_CENTERIMAGE
+    LTEXT           "YMin",IDC_STATIC,9,43,18,8
+    CTEXT           "YMax",IDC_STATIC,9,60,18,8
+    EDITTEXT        IDC_XMIN,31,8,73,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_XMAX,31,24,73,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_YMIN,31,40,73,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_YMAX,31,57,73,14,ES_AUTOHSCROLL
+    CONTROL         "AutoX",IDC_AUTOX,"Button",BS_AUTOCHECKBOX | BS_LEFT | BS_VCENTER | WS_TABSTOP,110,10,34,10
+    CONTROL         "AutoY",IDC_AUTOY,"Button",BS_AUTOCHECKBOX | BS_LEFT | BS_VCENTER | WS_TABSTOP,110,42,34,10
+    CONTROL         "LogX",IDC_LOGX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,110,26,34,10
+    CONTROL         "LogY",IDC_LOGY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,110,59,34,10
+END
+
+IDD_SCREEN_PROPERTIES DIALOGEX 0, 0, 467, 225
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Screen Preferences"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_PLOT,"Static",SS_BLACKFRAME,163,7,297,210,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "Background",IDC_STATIC,16,58,40,8
+    LTEXT           "Frame",IDC_STATIC,16,74,40,8
+    LTEXT           "Labels",IDC_STATIC,16,92,40,8
+    GROUPBOX        "Colors",IDC_STATIC,7,39,73,167,BS_NOTIFY
+    LTEXT           "Tic Lines",IDC_STATIC,16,108,40,8
+    PUSHBUTTON      "",IDC_BKG,62,57,11,11,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "",IDC_FRAME,62,74,11,11,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "",IDC_LABELS,62,90,11,11,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "",IDC_TICLINES,62,108,11,11,0,WS_EX_STATICEDGE
+    LTEXT           "Marker",IDC_STATIC,16,126,40,8
+    PUSHBUTTON      "",IDC_MARKER,62,124,11,11,0,WS_EX_STATICEDGE
+    LTEXT           "Zooming",IDC_STATIC,16,143,40,8
+    PUSHBUTTON      "",IDC_ZOOMING,62,142,11,11,0,WS_EX_STATICEDGE
+    LTEXT           "Cursor Pos.",IDC_STATIC,16,159,40,8
+    PUSHBUTTON      "",IDC_CURPOS,62,159,11,11,0,WS_EX_STATICEDGE
+    GROUPBOX        "Fonts",IDC_STATIC,84,39,73,38,BS_NOTIFY
+    LTEXT           "Font",IDC_STATIC,92,58,15,8
+    PUSHBUTTON      "",IDC_FONT,138,57,11,11,0,WS_EX_STATICEDGE
+    COMBOBOX        IDC_DATASETS,16,188,57,36,CBS_DROPDOWNLIST | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Data Set",IDC_STATIC,29,174,29,8
+    LTEXT           "Restore Def.",IDC_STATIC,92,190,41,8
+    PUSHBUTTON      "",IDC_DEFAULT,138,189,11,11,0,WS_EX_STATICEDGE
+END
+
+IDD_DATASET_PROPERTIES DIALOGEX 0, 0, 123, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dataset Properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,22,68,27,14
+    PUSHBUTTON      "Cancel",IDCANCEL,75,68,27,14
+    LTEXT           "Title",IDC_STATIC,7,10,14,8
+    EDITTEXT        IDC_TITLE,49,7,67,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_SYMBOLS,49,43,67,55,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Color",IDC_COLOR,89,25,27,14
+    LTEXT           "Symbol",IDC_STATIC,7,45,24,8
+    EDITTEXT        IDC_PENWIDTH,49,25,27,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Pen Width",IDC_STATIC,7,28,34,8
+END
+
+IDD_PRINTER_PROPERTIES DIALOGEX 0, 0, 467, 225
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Print Preferences"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_PLOT,"Static",SS_BLACKFRAME,163,7,297,210,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "Background",IDC_STATIC,16,58,40,8
+    LTEXT           "Frame",IDC_STATIC,16,74,40,8
+    LTEXT           "Labels",IDC_STATIC,16,92,40,8
+    GROUPBOX        "Colors",IDC_STATIC,7,39,73,141,BS_NOTIFY
+    LTEXT           "Tic Lines",IDC_STATIC,16,108,40,8
+    PUSHBUTTON      "",IDC_BKG,62,57,11,11,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "",IDC_FRAME,62,74,11,11,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "",IDC_LABELS,62,90,11,11,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "",IDC_TICLINES,62,108,11,11,0,WS_EX_STATICEDGE
+    GROUPBOX        "Fonts",IDC_STATIC,84,39,73,141,BS_NOTIFY
+    LTEXT           "Font",IDC_STATIC,92,58,15,8
+    PUSHBUTTON      "",IDC_FONT,138,57,11,11,0,WS_EX_STATICEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_PLOTLENS            CURSOR                  "res\\zoom.cur"
+IDC_PLOTCROSS           CURSOR                  "res\\Cross.cur"
+IDC_PLOTHAND            CURSOR                  "res\\hand.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICONPLOT            ICON                    "res\\Plot.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_AXISDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 142
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+    END
+
+    IDD_AXESDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_SCREEN_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 460
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_DATASET_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 116
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_PRINTER_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 460
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DATASET_PROPERTIES DLGINIT
+BEGIN
+    IDC_SYMBOLS, 0x403, 5, 0
+0x694c, 0x656e, "\000" 
+    IDC_SYMBOLS, 0x403, 6, 0
+0x6f50, 0x6e69, 0x0074, 
+    IDC_SYMBOLS, 0x403, 5, 0
+0x6c50, 0x7375, "\000" 
+    IDC_SYMBOLS, 0x403, 6, 0
+0x7243, 0x736f, 0x0073, 
+    IDC_SYMBOLS, 0x403, 5, 0
+0x7453, 0x7261, "\000" 
+    IDC_SYMBOLS, 0x403, 12, 0
+0x7055, 0x5420, 0x6972, 0x6e61, 0x6c67, 0x0065, 
+    IDC_SYMBOLS, 0x403, 14, 0
+0x6f44, 0x6e77, 0x5420, 0x6972, 0x6e61, 0x6c67, 0x0065, 
+    IDC_SYMBOLS, 0x403, 7, 0
+0x6943, 0x6372, 0x656c, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_PLOTMENU MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Save Data File",              ID_DATAFILESAVE
+        MENUITEM "Clear Plot",                  ID_CLEARPLOT
+        MENUITEM "Preferences...",              ID_PREFERENCES
+        MENUITEM "Print...",                    ID_PRINT
+    END
+END
+
+#endif    // Italiano (Italia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+LANGUAGE 16, 1
+#pragma code_page(1252)
+#include "res\Plot3.rc2"  // risorse non modificate con Microsoft Visual C++
+#include "afxres.rc"     // Componenti standard
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
